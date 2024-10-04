@@ -29,7 +29,7 @@ int main() {
     if (inputScale == 1) {  // Fahrenheit
         if (targetScale == 2) {
             convertedTemp = fahrenheitToCelsius(temp);
-            printf("Converted Temperature: %.2lf캜\n", convertedTemp);
+            printf("Converted Temperature: %.2lf째C\n", convertedTemp);
         }
         else if (targetScale == 3) {
             convertedTemp = celsiusToKelvin(fahrenheitToCelsius(temp));
@@ -37,13 +37,13 @@ int main() {
         }
         else {
             convertedTemp = temp;
-            printf("Converted Temperature: %.2lf캟\n", convertedTemp);
+            printf("Converted Temperature: %.2lf째F\n", convertedTemp);
         }
     }
     else if (inputScale == 2) {  //Celsius
         if (targetScale == 1) {
             convertedTemp = celsiusToFahrenheit(temp);
-            printf("Converted Temperature: %.2lf캟\n", convertedTemp);
+            printf("Converted Temperature: %.2lf째F\n", convertedTemp);
         }
         else if (targetScale == 3) {
             convertedTemp = celsiusToKelvin(temp);
@@ -51,17 +51,17 @@ int main() {
         }
         else {
             convertedTemp = temp;
-            printf("Converted Temperature: %.2lf캜\n", convertedTemp);
+            printf("Converted Temperature: %.2lf째C\n", convertedTemp);
         }
     }
     else if (inputScale == 3) {  // Kelvin
         if (targetScale == 1) {
             convertedTemp = celsiusToFahrenheit(kelvinToCelsius(temp));
-            printf("Converted Temperature: %.2lf캟\n", convertedTemp);
+            printf("Converted Temperature: %.2lf째F\n", convertedTemp);
         }
         else if (targetScale == 2) {
             convertedTemp = kelvinToCelsius(temp);
-            printf("Converted Temperature: %.2lf캜\n", convertedTemp);
+            printf("Converted Temperature: %.2lf째C\n", convertedTemp);
         }
         else {
             convertedTemp = temp;
