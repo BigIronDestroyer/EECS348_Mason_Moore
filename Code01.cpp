@@ -11,7 +11,7 @@ void findCombinations(int score) {
     const int TD_2pt = 8;
     const int TD_FG = 7;
 
-    cout << "Possible combinations of scoring plays if a team’s score is " << score << ":\n";
+    cout << "Possible combinations of scoring plays if a teamâ€™s score is " << score << ":\n";
 
     // Gi through all points
     for (int td_2pt = 0; td_2pt <= score / TD_2pt; ++td_2pt) {
